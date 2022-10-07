@@ -1,0 +1,257 @@
+/* section Reset pour effacer le css du navigateur*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* section Télechargement de la police Google Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+/* section Media queries responsive */
+
+@media screen and (max-width:767px) {}
+
+@media screen and (min-width:767px) and (max-width:1024px) {}
+
+@media screen and (min-width:1024px) and (max-width:1200px) {}
+
+@media screen and (min-width:1200px) {}
+
+/* section menu nav*/
+
+.logo {
+    border: solid white;
+    border-radius: 20px;
+    margin-top: 2em;
+    margin-left: 4em;
+    height: 5em;}
+    
+nav {
+    display: flex;
+    justify-content: start;
+    margin: auto;}
+    
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+    background: -webkit-linear-gradient(bottom, black, white);
+    font-size: large;
+    color: black;
+    font-weight: bold;
+    padding-top: 0.5em;
+    margin-top: 1.8em;
+    height: 4em;
+    margin-left: 4em;
+    margin-right: 3.5em;
+    border-radius: 1em;
+    list-style: none;
+    width: 65em;
+    border: solid white;}
+    
+a {
+    color: black;}
+    
+a:hover {
+    color: white;}
+
+    
+/* section liner-1*/
+    
+.liner-1a {
+    background-color: white;
+    width: 87em;
+    height: 0.4em;
+    margin: auto;
+    margin-top: 3em;
+    margin-right: 4.5em;
+    border-radius: 1em;}
+    
+.liner-1b {
+    background-color: white;
+    width: 87em;
+    height: 0.4em;
+    margin: auto;
+    margin-top: 1em;
+    margin-right: 4.5em;
+    border-radius: 1em;}
+        
+        /* section main */
+        body {
+            background-color: rgb(2, 2, 2);
+            width: 100%;
+            font-family: "Lobster", cursive, Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        .maintop {
+            display: flex;
+            justify-content: flex-start;
+        }
+        
+        .imgtop {
+            width: 50%;
+            margin-left: 3.5%;
+            margin-top: 3%;
+            border-radius: 2em;
+        }
+        
+        .p-top {
+            margin-left: 2%;
+            margin-right: 5%;
+            margin-top: 4%;
+            font-size: large;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .liner-2a {
+            background-color: white;
+            width: 45em;
+            height: 0.4em;
+            margin: auto;
+            margin-top: 5em;
+            border-radius: 1em;
+        }
+        
+        .liner-2b {
+            background-color: white;
+            width: 45em;
+            height: 0.4em;
+                margin: auto;
+                margin-top: 1em;
+                border-radius: 1em;
+            }
+            
+            
+            
+            .liner-3a {
+                background-color: white;
+                width: 45em;
+                height: 0.4em;
+                margin: auto;
+                margin-top: 25%;
+                border-radius: 1em;
+            }
+            
+            .liner-3b {
+                background-color: white;
+                width: 45em;
+                height: 0.4em;
+                margin: auto;
+                margin-top: 1%;
+                border-radius: 1em;
+            }
+            
+            .footer {
+                background-color: cyan;
+                height: 100px;
+                margin-left: 4em;
+                margin-right: 4em;
+                border-radius: 1em;
+                margin-bottom: 2em;
+            }
+            
+            #contact {
+                color: white;
+                font-size: x-large;
+                text-align: center;
+                margin-bottom: 20px;
+                margin-top: 20em;
+            }
+            
+            .title-contact {
+                font-size: 20px;
+                color: rgb(254, 253, 253);
+                margin-bottom: 10px;
+                margin-top: 10px;
+                display: flex;
+                    justify-content: center;
+                }
+                
+                .champ1 input {
+                    height: 30px;
+                    width: 40%;
+                    margin-bottom: 50px;
+                    display: flex;
+                    justify-content: center;
+                    margin: auto;
+                }
+                
+                .champ2 textarea {
+                    width: 40%;
+                    height: 50%;
+                    background-color: rgb(252, 252, 252);
+                    display: flex;
+                    justify-content: center;
+                    margin: auto;
+                }
+                
+                .bouton-submit {
+                    display: flex;
+                    justify-content: center;
+                    margin: auto;
+                    margin-top: 20px;
+                    margin-bottom: 100px;
+                    height: 30px;
+                }
+                
+                   
+#submit {
+        color: rgb(4, 4, 4);
+        font-size: medium;
+        font-weight: bold;
+        width: 10%;
+        height: 100%;
+        margin-top: 2%;
+    }                                   
+                
+#contactForm {
+    border: solid white;
+        border-radius: 2em;
+        margin-left: 10em;
+        margin-right: 10em;
+        margin-bottom: 10em;
+    }                
+                
+#titredown {
+}
+
+
+    div.wrapper {
+            margin: auto;
+            width: 300px;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 50px 200vh 50px;
+        }
+    
+        #aside1 {
+            background-color: beige;
+            grid-column: 1/4;
+            ;
+            ;
+        }
+    
+        #topbox1 {
+            background-color: rgb(149, 85, 7);
+        }
+    
+#topbox1 {
+    background-color: rgb(149, 85, 7);}
+
+
+        #botbox {
+            background-color: rgb(6, 154, 105);
+        }
+    
+       {
+            background-color: rgb(166, 8, 8);
+        }
+    
+   {
+            background-color: rgb(180, 17, 180);
+            grid-column: 1/4;
+        }
