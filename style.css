@@ -3,8 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-  }
+    box-sizing: border-box;}
 
 /* section Télechargement de la police Google Fonts */
 
@@ -12,56 +11,45 @@
 
 /* section Media queries responsive */
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:600px) {
 
 .logo {
-    width: 100%;
-      }
+    width: 100%;}
 
 ul  {
-   display: none;
-    }
+   display: none;}
 
 .liner-1a,
 .liner-1b {
-    display: none;
-}
+    display: none;}
 
 .imgtop {
-    display: none;
-}
+    display: none;}
 
 .p-top {
  width: auto;
  flex-direction: column;
  justify-content: flex-start;
- margin:auto;
-}
+ margin:auto;}
 
-
-
-
-#topbox 
+#boxcontent
 {
- flex-direction: column;
-
+ flex-direction: column;}
 }
 
+/* section Media queries responsive */
 
+@media screen and (min-width:767px){}
 
-}
-
-
-@media screen and (min-width:767px){
-
-
-}
+/* section Media queries responsive */
 
 @media screen and (min-width:1024px) and (max-width:1200px) {}
 
+/* section Media queries responsive */
+
 @media screen and (min-width:1200px) {}
 
-/* section menu nav*/
+/* section menu header*/
 
 .logo {
     border: solid white;
@@ -69,15 +57,12 @@ ul  {
     margin-top: 2em;
     margin-left: 4em;
     height: 5em;
-    width: 12em;
-    }
+    width: 20em;}
     
 .header {
     display: flex;
     justify-content: start;
-    margin-right: 5em;
-  
-    }
+    margin-right: 5em;}
     
 ul {
     display: flex;
@@ -93,20 +78,21 @@ ul {
     border-radius: 1em;
     list-style: none;
     width: 65em;
-    border: solid white;
-   
-    }
+    border: solid white;}
     
 a {
-    color: black;
-  }
+    color: black;}
     
 a:hover {
-    color: white;
-        }
+    color: white;}
 
-    
-/* section liner-1*/
+.social {
+margin-top: 1.8em;
+display: flex;
+margin-left:3em;
+}
+ 
+/* section liner-1 (trait horizontal)*/
     
 .liner-1a {
     background-color: white;
@@ -115,8 +101,7 @@ a:hover {
     margin-left: 4em;
     margin-top: 3em;
     margin-right: 4em;
-    border-radius: 1em;
-          }
+    border-radius: 1em;}
     
 .liner-1b {
     background-color: white;
@@ -125,40 +110,35 @@ a:hover {
     margin-left: 4em;
     margin-top: 1em;
     margin-right: 4em;
-    border-radius: 1em;
-          }
+    border-radius: 1em;}
         
 /* section main */
         
 body {
     background-color: rgb(2, 2, 2);
     width: 100%;
-    font-family: "Lobster", cursive, Verdana, Geneva, Tahoma, sans-serif;
-     }
+    font-family: "Lobster", cursive, Verdana, Geneva, Tahoma, sans-serif;}
         
-.maintop {
+.maintop { 
     display: flex;
-    justify-content: flex-start;
-         }
+    justify-content: flex-start;}
         
-.imgtop {
+.imgtop { /*image en haut a gauche */
     width: 35%;
     margin-left: 5%;
     margin-top: 4%;
     border-radius: 2em;
     border:solid white;
-    height: 5%;
-        }
+    height: 5%;}
         
-.p-top {
+.p-top { /*texte en haut a droite */
     margin-left: 4%;
     margin-right: 10%;
     margin-top: 3em;
     font-size: X-large;
     color: white;
     text-align: center;
-    font-weight: bold; 
-        }
+    font-weight: bold;}
 
 /* section liner-2*/
         
@@ -168,8 +148,7 @@ body {
     height: 0.4em;
     margin: auto;
     margin-top: 5%;
-    border-radius: 1em;
-          }
+    border-radius: 1em;}
         
 .liner-2b {
     background-color: white;
@@ -177,89 +156,58 @@ body {
     height: 0.4em;
     margin: auto;
     margin-top: 1em;
-    border-radius: 1em;
-          }
+    border-radius: 1em;}
 
 /* section wrappercont (grid container) */
 
-.wrappercont {     
+#wrappercont {     
     margin-top: 4%;
     display:grid;
     margin-left: 10%;
     margin-right: 10%;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,50%) ;
-    grid-gap :15px;
-             }
+    grid-gap :15px;}
 
-/*section items box (cases couleur cyan ) */  
+/*section items box (boites avec contenu texte et button) */  
 
-#topbox1 {
-    
-    border-radius: 2em;
-    background: -webkit-linear-gradient(bottom,white,rgb(2, 250, 44));
-         }
-#topbox1 p {
+.boxcontent {
+        display: flex;
+        border-radius: 2em;
+        background: -webkit-linear-gradient(bottom, white, rgb(2, 250, 44));
+        padding: 20px;
+        height: 320px;
+        flex-direction: column;
+        align-content: space-between;
+        justify-content: space-between;
+        align-items: center;
+        border: solid white;}
+
+.boxcontent p {
     font-weight: bold;
-    font-size: large;
-    margin-left: 1em;
-    margin-right: 1em;
-    margin-top: 0.5em;
-}
+    font-size: large;}
 
-#topbox1 a {
-    
-    margin-left: 4em;
+.bouton, .bouton a {
+    padding: 5px 10px;
     font-size:large;
     background-color: rgb(0, 0, 0);
-    border-radius: 0.5em;
+    border-radius: 5px;
     color: white;
+    text-decoration: none;}
+
+.bouton:hover {
+ color: rgb(0, 204, 255);}
     
+/*section items box (boites avec des images) */
 
-}
-
-#topbox1 a:hover {
- color: rgb(0, 204, 255);
-
-}
-    
-#topbox3 {
-   
+.boximage {
     border-radius: 2em;
-    background: -webkit-linear-gradient(bottom,white,
-        rgb(2, 250, 44));
-         }
-   
-#botbox2 {
-   
+    }
+
+.boximage img {
     border-radius: 2em;
-    background: -webkit-linear-gradient(bottom,white,
-        rgb(2, 250, 44));
-         }
-
-
-
-
- 
-/*section items box (cases images) */
-
-.tb2 {
-    height:100% ;
-    width:100%;
-    border-radius: 2em;
-     }
-
-.bb1 {
-    height: 100%;
-    width: 100%;
-    border-radius: 2em;
-     }
-
-.bb3 {
-    height:100%;
-    width: 100%;
-    border-radius: 2em;
-     }
+    height: 320px;
+    width: 400px;}
 
 /* section liner-3*/
 
@@ -269,8 +217,7 @@ body {
     height: 0.4em;
     margin: auto;
     margin-top: 5%;
-    border-radius: 1em;
-          }
+    border-radius: 1em;}
 
 .liner-3b {
     background-color: white;
@@ -278,30 +225,125 @@ body {
     height: 0.4em;
     margin: auto;
     margin-top: 1%;
-    border-radius: 1em;
-          }
+    border-radius: 1em;}
 
+/*section mainbot (compétition et tousconcernes) */
 
-/* section carousel */
+.mainbotleft{
+    width: 15%;
+    margin-left:5em;
+    margin-top: 3em;
+    border-radius: 2em;
+    height:20em;
+    border: solid white;}
+
+.mainbotright {
+    width:15%;
+    margin-left:em;
+    margin-top: 3em;
+    border-radius: 2em;
+    margin-right: 15em;
+    height: 20em;
+    border: solid white;}
+
+#mainbot {
+    display: flex;
+    justify-content:flex-start;
+    margin-left: 8em;}
+
+#mainbot p {
+    font-weight: bold;
+    font-size: large;
+    color: white;
+    margin-left:50em;
+    margin-right: 5em;
+    margin-top: em;
+    width:20%;}
+
+.compet {
+        font-weight: bold;
+        font-size: x-large;
+        color: white;
+        margin-left:7em;
+        margin-right: 5em;
+        margin-top: 1em;
+        width:50%;}
+
+#tousconcern img {
+    width: 60%;
+    height: 20em;
+    border-radius: 2em;
+    margin-top: 4em;
+    margin-left: 18em;
+    border: solid white;}
+
+/* section liner-4*/
+
+.liner-4a {
+    background-color: white;
+    width: 45em;
+    height: 0.4em;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 1em;}
+
+.liner-4b {
+    background-color: white;
+    width: 45em;
+    height: 0.4em;
+    margin: auto;
+    margin-top: 1%;
+    border-radius: 1em;}
+
+/*section sejour */
+
+h3 {
+    color:white;
+    margin-top:2em ;
+    margin-left: 0em;
+    text-align: center;
+    font-size: x-large;}
+
+#sejour p {
+  color:white;
+  font-size: x-large;
+  margin-top: 2em;
+  font-weight: bold;
+  text-align: center;}
+
+#sejour img {
+    border-radius: 2em;
+    margin-left: 15em;
+    margin-top: 2em;
+    width: 70%;
+    border: solid white;}
+
+/* section liner-5*/
+
+.liner-5a {
+    background-color: white;
+    width: 45em;
+    height: 0.4em;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 1em;}
+
+.liner-5b {
+    background-color: white;
+    width: 45em;
+    height: 0.4em;
+    margin: auto;
+    margin-top: 1%;
+    border-radius: 1em;}
 
 /*section footer (formulaire de contact) */
 
-.footer {
-    background-color: cyan;
-    height: 100px;
-    margin-left: 4em;
-    margin-right: 5em;
-    border-radius: 1em;
-    margin-bottom: 2em;
-}
-
 #contact {
-    color: black;
+    color:white;
     font-size: x-large;
     text-align: center;
     margin-bottom: 20px;
-    margin-top: 20em;
-}
+    margin-top: 2em;}
 
 .title-contact {
     font-size: 20px;
@@ -311,8 +353,7 @@ body {
     display: flex;
     justify-content: center;
     color: black;
-    font-weight: bold;
-}
+    font-weight: bold;}
 
 .champ1 input {
     height: 30px;
@@ -320,9 +361,7 @@ body {
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
-    margin: auto;
-    
-}
+    margin: auto;}
 
 .champ2 textarea {
     width: 40%;
@@ -330,8 +369,7 @@ body {
     background-color: rgb(252, 252, 252);
     display: flex;
     justify-content: center;
-    margin: auto;
-}
+    margin: auto;}
 
 .bouton-submit {
     display: flex;
@@ -339,9 +377,7 @@ body {
     margin: auto;
     margin-top: 20px;
     margin-bottom: 100px;
-    height: 30px;
-}
-
+    height: 30px;}
 
 #submit {
     color: rgb(4, 4, 4);
@@ -349,8 +385,7 @@ body {
     font-weight: bold;
     width: 10%;
     height: 100%;
-    margin-top: 2%;
-}
+    margin-top: 2%;}
 
 #contactForm {
     border: solid white;
@@ -359,28 +394,30 @@ body {
     margin-right: 10em;
     margin-bottom: 2em;
     background: -webkit-linear-gradient(bottom, white,
-                rgb(2, 250, 44));
-   
-}
+                rgb(2, 250, 44));}
 
-
+/*section footend (pied de page) */
 
 #footend {
-    background-color: cyan;
     background: -webkit-linear-gradient(bottom, white,
         rgb(2, 250, 44));
     display: flex;
-    justify-content:space-evenly;
+    justify-content:flex-start;
     width: 79%;
-    height: 2.5em;
+    height:4em;
     margin-left: 10em;
     margin-right: 10em;
     margin-bottom: 2em;
-    font-size: em;
     border-radius: 2em;
-    padding-top: 1em;
+    padding-top: 0.1em;
     font-weight: bold;
-    position: sticky;
-    bottom: 0;
-         }
+    border: solid white;}
+
+#footend p {
+margin-left: 1em;
+margin-right: 2em;
+display: flex;
+margin-top: 0.5em;
+}
+
 
