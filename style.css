@@ -9,46 +9,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
-/* section Media queries responsive */
-
-@media screen and (max-width:600px) {
-
-.logo {
-    width: 100%;}
-
-ul  {
-   display: none;}
-
-.liner-1a,
-.liner-1b {
-    display: none;}
-
-.imgtop {
-    display: none;}
-
-.p-top {
- width: auto;
- flex-direction: column;
- justify-content: flex-start;
- margin:auto;}
-
-#boxcontent
-{
- flex-direction: column;}
-}
-
-/* section Media queries responsive */
-
-@media screen and (min-width:767px){}
-
-/* section Media queries responsive */
-
-@media screen and (min-width:1024px) and (max-width:1200px) {}
-
-/* section Media queries responsive */
-
-@media screen and (min-width:1200px) {}
-
 /* section menu header*/
 
 .logo {
@@ -56,14 +16,16 @@ ul  {
     border-radius: 20px;
     margin-top: 2em;
     margin-left: 4em;
-    height: 5em;
-    width: 20em;}
+    height: 10em;
+    width :25em}
     
 .header {
     display: flex;
     justify-content: start;
     margin-right: 5em;}
-    
+
+ /* section menu desktop*/
+
 ul {
     display: flex;
     justify-content: space-around;
@@ -77,7 +39,7 @@ ul {
     margin-right: 3.5em;
     border-radius: 1em;
     list-style: none;
-    width: 65em;
+    width:45em;
     border: solid white;}
     
 a {
@@ -89,9 +51,49 @@ a:hover {
 .social {
 margin-top: 1.8em;
 display: flex;
-margin-left:3em;
-}
- 
+margin-left:3em;}
+
+ /* section menu mobile*/
+
+.navbar-mobile i {
+    position: fixed;
+    z-index: 9999;
+    top: 9px;
+    right: 1px;
+    font-size: 3rem;
+    color: rgb(199, 3, 3);}
+
+.modal {
+    background: rgb(66, 11, 246);
+    height: 10vh;
+    position:fixed;
+    top: 5vh;
+    left: 400;
+    width: 20%;
+    opacity: 0.9;}
+
+.navbar-mobile-list {
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;}
+
+.navbar-mobile-list a {
+    font-size:20px;
+    font-weight: 800;
+    color: #010101;
+    padding: 2rem;}
+
+.navbar-mobile{
+    display: none;}
+
+.modal {
+    transition: top 0.9 s;
+    background-color: chartreuse;
+    height: 100vh;}
+
+
 /* section liner-1 (trait horizontal)*/
     
 .liner-1a {
@@ -172,16 +174,16 @@ body {
 /*section items box (boites avec contenu texte et button) */  
 
 .boxcontent {
-        display: flex;
-        border-radius: 2em;
-        background: -webkit-linear-gradient(bottom, white, rgb(2, 250, 44));
-        padding: 20px;
-        height: 320px;
-        flex-direction: column;
-        align-content: space-between;
-        justify-content: space-between;
-        align-items: center;
-        border: solid white;}
+    display: flex;
+    border-radius: 2em;
+    background: -webkit-linear-gradient(bottom, white, rgb(2, 250, 44));
+    padding: 20px;
+    height: 320px;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+    border: solid white;}
 
 .boxcontent p {
     font-weight: bold;
@@ -196,13 +198,12 @@ body {
     text-decoration: none;}
 
 .bouton:hover {
- color: rgb(0, 204, 255);}
+    color: rgb(0, 204, 255);}
     
 /*section items box (boites avec des images) */
 
 .boximage {
-    border-radius: 2em;
-    }
+    border-radius: 2em;}
 
 .boximage img {
     border-radius: 2em;
@@ -414,10 +415,69 @@ h3 {
     border: solid white;}
 
 #footend p {
-margin-left: 1em;
-margin-right: 2em;
-display: flex;
-margin-top: 0.5em;
+    margin-left: 1em;
+    margin-right: 2em;
+    display: flex;
+    margin-top: 0.5em;}
+
+
+/* section Media queries responsive */
+
+@media screen and (max-width:650px) {
+
+
+.navbar-mobile{
+    display: block;}
+
+.navbar-desktop{
+    display: none;}
+ 
+.liner-2a,
+.liner-2b {
+    margin-left: 15em;
+    width: 80%;
+    margin-top: 2em;}
+
+
+.logo {
+    min-width: 10em;
+    max-width: 15em;
+    justify-content: center;}
+
+ ul {
+    display: none;}
+
+.liner-1a,
+.liner-1b {
+    display: none;}
+
+.imgtop {
+     display: none;}
+
+.p-top {
+    display: grid;
+    min-width:80%  ;
+    flex-direction: column;
+    align-items:center ;
+    margin-top: 2em;
+    margin-left: 3em;
+    color: rgb(248, 244, 244);
+    font-size: x-large;}
+
+.social {
+    display: none;}
 }
 
+
+/* section Media queries responsive */
+
+@media screen and (min-width:650px)  {}
+
+/* section Media queries responsive */
+
+@media screen and (min-width:1024px) and (max-width:1200px) {}
+
+/* section Media queries responsive */
+
+@media screen and (min-width:1200px) {}
 

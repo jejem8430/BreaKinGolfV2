@@ -5,26 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
     <title>Bienvenue sur Espace Golf</title>
 </head>
 <body>
     <header class="header">
-        <img class="logo" src="/photos/LOGOEP2.JPG" alt="logo espace golf" />
+        <img class="logo" src="/photos/LOGOEP2.JPG" alt="logo espace golf"/>
         <section class="social">
             <a href="https://m.facebook.com/login/?locale=fr_FR"target="_blank"><img src="/icons/icons8-facebook.svg" alt="logo facebook"  />
             <a href="https://www.instagram.com/?hl=fr"target="_blank"><img src="/icons/icons8-instagram.svg" alt="logo facebook" />
             <a href="https://twitter.com/?lang=fr"target="_blank"><img src="/icons/icons8-logo-twitter-encadré-48 (1).png"alt="logo facebook" />
         </section>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="#wrappercont">Débuter le Golf</a></li>
-            <li><a href="#mainbot">Compétitions</a></li>
-            <li><a href="#sejour">Séjours</a></li>
-            <li><a href="#contactForm">Contact</a></li>
-        </ul>
-        
+        <nav>
+            <div class="navbar-mobile"><!--menu mobile-->
+                <i class="fas fa-bars"></i>
+                <div class="modal">
+                    <div class="navbar-mobile-list">
+                        <a href="#">Accueil</a>
+                        <a href="#">Débuter le Golf</a>
+                        <a href="#">Compétitions</a>
+                        <a href="#">Séjours</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-desktop"><!--menu bureau-->
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="#wrappercont">Débuter le Golf</a></li>
+                    <li><a href="#mainbot">Compétitions</a></li>
+                    <li><a href="#sejour">Séjours</a></li>
+                    <li><a href="#contactForm">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <main>
         <section >
@@ -147,5 +161,6 @@
             <p>EspaceGolf 14 chemin de la bouillabaisse 13000 Marseille contact@espacegolf.fr</p>
         </div>
     </footer>
+        <script src="script.js"></script>
 </body>                               
 </html>
