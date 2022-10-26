@@ -1,3 +1,6 @@
+
+//message js retour formulaire//
+
 const message = "Merci pour votre message nous vous répondrons dans les plus brefs délais.";
 let contact = document.querySelector("#contactForm")
 
@@ -8,7 +11,7 @@ contact.addEventListener("submit", function (event) {
         event.preventDefault();
         console.log("log");
 
-        alert(message);
+    alert(message);
     });
 
 
