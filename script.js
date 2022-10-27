@@ -14,5 +14,30 @@ contact.addEventListener("submit", function (event) {
     alert(message);
     });
 
+const moveNav = document.querySelectorAll(".li");
+const query = document.querySelector(".frites")
+query.addEventListener("mouseover", () => {
+    console.log("coca")
+})
+console.log(moveNav)
+for (const itemNav of moveNav) {
+    itemNav.addEventListener(`mouseover`, function () {
+        console.log("mouseOver")
+        itemNav.classList.add("navJS");
+    });
+    itemNav.addEventListener(`mouseleave`, function () {
+        console.log('mouseLeave')
+        itemNav.classList.remove("navJS");
+    });
+}
+
+
+
+
+
+
+
+
+
 
 
