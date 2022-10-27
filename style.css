@@ -5,6 +5,11 @@
     padding: 0;
     box-sizing: border-box;}
 
+body {
+    background-color: rgb(2, 2, 2);
+    width: 100%;
+    font-family: "Lobster", cursive, Verdana, Geneva, Tahoma, sans-serif;}
+
 /* section Télechargement de la police Google Fonts */
 
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
@@ -44,14 +49,13 @@ ul {
 
 .navJS li a {
      font-size:large;
-     color: blueviolet;
-}   
+     color: blueviolet;}   
 
 a {
     color: black;}
     
-/*a:hover {
-    color: rgb(186, 7, 7);}*/
+a:hover {
+    color: white;}
 
 .social {
     margin-top: 1.8em;
@@ -97,12 +101,7 @@ a {
     border-radius: 1em;}
         
 /* section main */
-        
-body {
-    background-color: rgb(2, 2, 2);
-    width: 100%;
-    font-family: "Lobster", cursive, Verdana, Geneva, Tahoma, sans-serif;}
-        
+               
 .maintop { 
     display: flex;
     justify-content: flex-start;}
@@ -114,7 +113,7 @@ body {
     border-radius: 2em;
     border:solid white;
     height: 5%;}
-        
+
 .p-top { /*texte en haut a droite */
     margin-left: 4%;
     margin-right: 10%;
@@ -381,6 +380,20 @@ h3 {
 
 /*section footend (pied de page) */
 
+#scroll_to_top {
+    position: fixed;
+    width: 6vw;
+    height:auto ;
+    bottom: 2vw;
+    margin-right: 3%;}
+
+#scroll_to_top img {
+    width: 6vw;
+    background-color: rgb(5, 231, 80);
+    border-radius: 1em;
+    font-weight: bold;
+    font-size: 15px;}
+
 #footend {
     background: -webkit-linear-gradient(bottom, white,
         rgb(2, 250, 44));
@@ -402,60 +415,104 @@ h3 {
     display: flex;
     margin-top: 0.5em;}
 
+/*section Animation et transition  */
+
+.tb2 {
+    /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
+    -moz-animation: all 1s ease;
+    /* Firefox */
+    -webkit-transition: all 1s ease;
+    /*Chrome*/ }
+
+.tb2:hover {
+    /* L'image est grossie de 50% */
+    -moz-transform: scale(1.50);
+    /* Firefox */
+    -webkit-transform: scale(1.50);
+    /*Chrome*/ }
+
+.bb1 {
+    -moz-animation: all 1s ease;
+    -webkit-transition: all 1s ease;}
+
+.bb1:hover {
+    -moz-transform: scale(1.50);
+    -webkit-transform: scale(1.50);}
+
+.bb3 {
+    -moz-animation: all 1s ease;
+    -webkit-transition: all 1s ease; }
+
+.bb3:hover {
+    -moz-transform: scale(1.50);
+    -webkit-transform: scale(1.50);}
+
+.imgsperone {
+    -moz-animation: all 1s ease;
+    -webkit-transition: all 1s ease;}
+
+.imgsperone:hover {
+    -moz-transform: scale(1.25);
+    -webkit-transform: scale(1.25);}
+
 /* section MEDIA QUERIES RESPONSIVE SMALL MOBILE */
 @media screen and (max-width:400px){
 
-.header {
+.header{
     display: grid;
     flex-direction: column;
     align-items: center;
-}
+    width :100%;}
 
 .social a{
     margin-top: 5em;
-    margin-left: 18em;
-    }
+    margin-left: 2em;}
+
 .social img  {
-       width: 10rem;
-}
+       width: 10rem;}
 
 .logo {
-        width: 50em;
-        height: 100%;
-        justify-content:center;
-        margin-left: 30%;
-        margin-top: 10em;
-        margin-bottom: 2em;}
+    width: 70%;
+    height: 100%;
+    margin-left: 20%;
+    margin-top: 3em;}
     
 ul {
      display: none;}
 
 .modal {
-        background-color: chartreuse;
-        height: 75%;
-        width: 80%;
-        margin-left: 15%;
-        margin-top: 5em;
-        border-radius: 2em;
-        margin-bottom: 2em;
-    }
+    background-color: chartreuse;
+    height: 75%;
+    width: 80%;
+    margin-left: 6.5em;
+    margin-top: 5em;
+    border-radius: 2em;
+    margin-bottom: 2em;}
+
+ .navbar-mobile-list a {
+     font-size: 55px;
+     font-weight: bold;
+     color: #010101;
+     padding: 1rem;
+     padding-top: 0.1rem;}
+
 .p-top {
     display: grid;
-        min-width: 20em;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 2em;
-        margin-bottom: 2em;
-        margin-left: 10em;
-        color: rgb(248, 244, 244);
-        font-size: xx-large;
-}
+    min-width:25em;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left:2em;
+    color: rgb(248, 244, 244);
+    font-size: x-large;}
+
 .navbar-desktop {
-    display: none;
-    }
+    display: none;}
+
 .imgtop {
-    display: none;
-}
+    display: none;}
+
 .liner-1a,
 .liner-1b,
 .liner-2a,
@@ -466,23 +523,105 @@ ul {
 .liner-4b,
 .liner-5a,
 .liner-5b {
-    margin-left: 40%;
-    width: 50em;
-    margin-top: 1em;}
+    margin-left:15em;
+    width: 80%;
+    margin-top: 2em;}
+
+.boxcontent p{
+    display: flex;
+    justify-content: center;
+    width: 30em;}
+
+.boxcontent {
+    margin-left:0.1em;
+    margin-right: 6em;
+    margin-bottom: 2em;}
+
+.boximage {
+    margin-right: 5em;
+    margin-bottom: 2em;}
 
 #wrappercont {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 2em;
-}
-}
+    margin-left: 25em;}
 
+#mainbot {
+    display:flex;
+    flex-direction: column;
+    width: 80%;}
 
+.mainbotleft {
+    width: 80%;
+    margin-left: 8em;
+    margin-bottom: 2em;}
+
+ol.compet {
+    width: 20%;
+    margin-left: 1em;
+    font-size: 20px;}
+
+ol.compet li {
+    width: 25rem;
+    margin-left: 1em;
+    font-size: 20px;}
+
+ol.compet h2 {
+    text-align: right;
+    margin-left: 4em;
+    font-size: 30px;
+    margin-bottom: 1em;}
+
+.mainbotright {
+    width: 80%;
+    margin-left: 8em;}
+
+#tousconcern img {
+    width:35em;
+    margin-left: 4em;
+    margin-bottom: 2em;}
+
+#sejour img {
+    margin-left: 4em;
+    margin-bottom: 2em;
+    width:35em;}
+
+#sejour p {
+    margin-left:2em;
+    margin-right:10em;
+    font-size: 25px;
+    width: 25em;}
+
+#sejour h3{
+margin-left: 3em;
+    width: 25em;}
+
+#footend {
+    margin-left: 4em;
+    width: 35em;}
+
+#footend .adresse {
+    display: none;}
+
+#contactForm {
+    width: 35em;
+    margin-left: 4em;}
+
+#submit {
+    width: 5em;}
+
+#contact {
+    font-size: large;
+    font-weight: bold;
+    margin-left: 5em;
+    width: 30em;}
+}
 
 /* section MEDIA QUERIES RESPONSIVE MOBILE */
 
-@media screen and (min-width:400px) and (max-width:768px) { 
+@media screen and (min-width:400px) and (max-width:768px){ 
 
 .navbar-mobile{
     display: block;}
@@ -524,7 +663,7 @@ ul {
     flex-direction: column;
     align-items:center ;
     margin-top: 2em;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
     margin-left: 2em;
     color: rgb(248, 244, 244);
     font-size: large;}
@@ -536,13 +675,15 @@ ul {
 display:flex;
 flex-direction: column;
 align-items: center;
-margin-top: 2em;}
+margin-top: 2em;
+margin-left: 5em;}
 
 .boxcontent
 .boximage {
     display: flex;
     justify-content: center;
-    align-content: center;}
+    align-content: center;
+    margin-left: 5em;}
 
 #mainbot{
     display: flex;
@@ -569,8 +710,7 @@ ol.compet li {
 ol.compet h2 {
     text-align:right;
     margin-left: 2em;
-    font-size: 30px;
-    }
+    font-size: 30px;}
 
 #tousconcern img{
     width:80%;
@@ -601,10 +741,10 @@ ol.compet h2 {
 
 #submit{
     width: 5em;}
+
 #contact{
     font-size:large;
     font-weight: bold;}
-
 }
 
 /* section MEDIA QUERIES RESPONSIVE TABLETTE */
@@ -616,13 +756,14 @@ ol.compet h2 {
 
 .navbar-mobile{
     display: none;}
+
 ul {
     display: flex;
     justify-content: space-around;
     background: -webkit-linear-gradient(bottom, white, rgb(2, 250, 44));
     font-size: large;
-    color: black;
-    font-weight: bold;
+    color: rgb(7, 7, 7);
+    font: weight 160px;;
     margin-top: 1.8em;
     height: 3em;
     margin-left: em;
@@ -630,8 +771,7 @@ ul {
     border-radius: 1em;
     list-style: none;
     width: 45em;
-    border: solid white;
-}
+    border: solid white;}
 
 .liner-1a,
 .liner-1b,
@@ -649,7 +789,7 @@ ul {
     margin-bottom: 2em;}
 
 .imgtop {
-    margin-left: 4em;
+    margin-left: 2em;
     width: 60%;
     margin-bottom: 3em;
     margin-top: 2em;}
@@ -663,7 +803,6 @@ ul {
     color: white;
     text-align: center;
     font-weight: bold;}
-
 
 #wrappercont {
     margin-top: 4rem;
@@ -702,22 +841,22 @@ ul {
     min-width: 70%;
     margin-right: 2em;
     font-size: 30px;}
+
 #sejour h3{
     font-size: 30px;
     margin-left: 15em;
     min-width: 70%;
-    margin-left: 16em;
-}
+    margin-left: 16em;}
 
 #footend {
     min-width: 100%;
-    margin-left: 19em;
+    margin-left: 18em;
     height: auto;
     font-size:large;}
 
 #contactForm {
     width: 95%;
-    margin-left: 23em;}
+    margin-left: 22em;}
 
 #submit {
     width: 5em;}
@@ -725,10 +864,11 @@ ul {
 #contact {
     font-size: 30px;
     font-weight: bold;
-    margin-left: 20em;
-    min-width:20%;
+    margin-left: 15em;
+    min-width:70%;}
 }
-}
+
+
 /* section MEDIA QUERIES RESPONSIVE LAPTOP */
 
 @media screen and (min-width:1024px) {
@@ -739,12 +879,9 @@ ul {
     .navbar-mobile {
     display: none;}
 
-
 .liner-1a,
 .liner-1b{
-    min-width: 50%;
-}
-
+    min-width: 50%;}
 
 .liner-2a,
 .liner-2b,
@@ -756,8 +893,6 @@ ul {
 .liner-5b {
     margin-left: 15%;
     min-width: 70%;
-    margin-top: 1em;
-}
-
+    margin-top: 1em;}
 }
 
