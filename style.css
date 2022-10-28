@@ -47,16 +47,13 @@ ul {
     width:45em;
     border: solid white;}
 
-.navJS li a {
-     font-size:large;
-     color: blueviolet;}   
+.navJS {
+     font-size:20px;
+     color: white;}   
 
 a {
     color: black;}
     
-a:hover {
-    color: white;}
-
 .social {
     margin-top: 1.8em;
     display: flex;
@@ -177,9 +174,6 @@ a:hover {
     border-radius: 5px;
     color: white;
     text-decoration: none;}
-
-.bouton:hover {
-    color: rgb(0, 204, 255);}
     
 /*section items box (boites avec des images) */
 
@@ -388,7 +382,7 @@ h3 {
     margin-right: 3%;}
 
 #scroll_to_top img {
-    width: 6vw;
+    width: 3vw;
     background-color: rgb(5, 231, 80);
     border-radius: 1em;
     font-weight: bold;
@@ -867,7 +861,6 @@ ul {
     margin-left: 15em;
     min-width:70%;}
 }
-
 
 /* section MEDIA QUERIES RESPONSIVE LAPTOP */
 
